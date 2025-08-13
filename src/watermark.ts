@@ -20,7 +20,6 @@ import { haarDWT, haarIDWT } from "./dwt";
 function encodePngFromBitmap(img: any): Buffer {
   const { width, height, data } = img.bitmap; // RGBA
   const png = new PNG({ width, height });
-  // Copia RGBA nella struttura pngjs
   (png as any).data = Buffer.from(data);
   return PNG.sync.write(png);
 }
@@ -31,11 +30,11 @@ function encodeJpegFromBitmap(img: any, quality = 90): Buffer {
 }
 
 function qimEncode(c: number, q: number, bit: 0 | 1): number {
-  const base = Math.floor(c / q) * q; // multiplo inferiore di q
+  const base = Math.floor(c / q) * q;
   return bit === 1 ? base + 0.75 * q : base + 0.25 * q;
 }
 function qimDecode(c: number, q: number): 0 | 1 {
-  const r = posMod(c, q); // resto in [0,q)
+  const r = posMod(c, q);
   return r >= q / 2 ? 1 : 0;
 }
 
@@ -75,7 +74,6 @@ function ensureEvenDimensions(img: any): { width: number; height: number } {
   return { width, height };
 }
 
-/* ========================== ADD WATERMARK =================================== */
 export async function addWatermark(
   imageBuffer: Buffer,
   watermarkText: string,
