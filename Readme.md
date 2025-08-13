@@ -87,8 +87,6 @@ interface WatermarkOptions {
   q?: number;               // Quantization step (default: 12)
   seed?: number;            // Permutation seed (default: 1234)
   reps?: number;            // Redundancy (default: 3)
-  output?: 'png' | 'jpeg'; // Output format (default: 'png')
-  jpegQuality?: number;     // JPEG quality (default: 95)
 }
 ```
 
@@ -140,8 +138,6 @@ const robustOptions = {
   q: 16,        // Higher quantization
   seed: 9999,   // Custom seed
   reps: 5,      // Higher redundancy
-  output: 'jpeg',
-  jpegQuality: 90
 };
 
 const { image } = await addWatermark(originalImage, "Important message", robustOptions);
