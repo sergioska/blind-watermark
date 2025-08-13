@@ -1,7 +1,8 @@
 {
-  "name": "dwt-watermark",
+  "name": "blind-watermark",
   "version": "1.0.0",
-  "description": "Libreria TypeScript per watermark invisibili usando DWT",
+  "description": "TypeScript library for invisible watermarks using DWT",
+  "author": "Sergio Sicari",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
