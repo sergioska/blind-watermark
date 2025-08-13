@@ -1,4 +1,4 @@
-# DWT-Watermark 🔐
+# Blind Watermark 🔐
 
 [![npm version](https://badge.fury.io/js/dwt-watermark.svg)](https://badge.fury.io/js/dwt-watermark)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -212,8 +212,8 @@ npm run test:coverage
 
 ```bash
 # Clone repository
-git clone https://github.com/tuousername/dwt-watermark.git
-cd dwt-watermark
+git clone https://github.com/sergioska/blind-watermark.git
+cd blind-watermark
 
 # Install dependencies
 npm install
