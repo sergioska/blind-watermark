@@ -20,15 +20,15 @@ A robust library for digital image watermarking using **Discrete Wavelet Transfo
 ## 🚀 Installation
 
 ```bash
-npm install dwt-watermark
+npm install blind-watermark
 ```
 
 ```bash
-yarn add dwt-watermark
+yarn add blind-watermark
 ```
 
 ```bash
-pnpm add dwt-watermark
+pnpm add blind-watermark
 ```
 
 ## 📖 Quick Start
